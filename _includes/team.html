@@ -1,0 +1,40 @@
+<!-- begin #team -->
+<div id="team" class="content" data-scrollview="true">
+  <!-- begin container -->
+  <div class="container">
+    <h2 class="content-title">Our Team</h2>
+    <p class="content-desc">
+      Phasellus suscipit nisi hendrerit metus pharetra dignissim. Nullam nunc ante, viverra quis<br />
+      ex non, porttitor iaculis nisi.
+    </p>
+    <!-- begin row -->
+    <div class="row">
+      <!-- begin col-4 -->
+      {% for member in site.data.members %}
+        <div class="col-md-4 col-sm-4">
+          <!-- begin team -->
+          <div class="team">
+            <div class="image" data-animation="true" data-animation-type="flipInX">
+              <img src="{{member.avatar}}" alt="{{member.name}}" />
+            </div>
+            <div class="info">
+              <h3 class="name">{{member.name}}</h3>
+              <div class="title text-theme">{{member.role}}</div>
+              <p>{{member.bio}}</p>
+              <div class="social">
+                {% for social in member.socials %}
+                  <a href="{{social[1]}}"><i class="fa fa-{{social[0]}} fa-lg fa-fw"></i></a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <!-- end team -->
+        </div>
+        <!-- end col-4 -->
+      {% endfor %}
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end #team -->
