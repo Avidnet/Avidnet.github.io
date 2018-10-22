@@ -1,0 +1,14 @@
+# Tertiary Parameters
+github_username: Avidnet
+project_repository: Avidnet.github.io
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+exclude:
+  - less
+  - node_modules
+  - Gruntfile.js
+  - package.json
+  - README.md
