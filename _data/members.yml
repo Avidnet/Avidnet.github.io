@@ -1,10 +1,10 @@
-- name: "Parham Alvani"
-  role: "Software Engineer"
-  bio: ""
-  avatar: "https://github.com/1995parham.png"
-  url: "https://1995parham.github.io/"
-  socials:
-    github: "https://github.com/1995parham"
+#- name: "Parham Alvani"
+#  role: "Software Engineer"
+#  bio: ""
+#  avatar: "https://github.com/1995parham.png"
+#  url: "https://1995parham.github.io/"
+#  socials:
+#    github: "https://github.com/1995parham"
 - name: "Ali Parto"
   role: "Co-Founder"
   bio: ""
