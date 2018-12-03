@@ -1,8 +1,72 @@
+<style>
+.carousel .bg-cover-img {
+  position: absolute;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.carousel .carousel-inner, .carousel .carousel-inner .item, .slider .carousel {
+  height: 100%;
+}
+
+.carousel .carousel-inner .item::after {
+  content: '';
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.carousel-control {
+  height: 60px;
+  width: 40px;
+  top: 50%;
+  margin-top: -30px;
+}
+</style>
 <!-- begin #home -->
-<div id="home" class="content has-bg home">
+<div id="home" class="section-container p-0 bg-black-darker">
   <!-- begin content-bg -->
-  <div class="content-bg">
-    <img src="{{ '/assets/img/bg/bg-home.jpg' | relative_url }}" alt="Home" />
+  <div id="main-carousel" class="carousel slide" data-ride="carousel" style="height: 100%">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="bg-cover-img" src="{{ '/assets/img/bg/bg-home-1.jpg' | relative_url }}" alt="Home" />
+        <div class="carousel-caption">
+          <!-- begin usplash-photo-credit -->
+          <h6>
+            Photo by
+            <a href="https://unsplash.com/photos/JR8XZ-gdZrA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Henry Be</a>
+            on
+            <a href="https://unsplash.com/search/photos/widescreen-farm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </h6>
+          <!-- end usplash-photo-credit -->
+        </div>
+      </div>
+      <div class="item">
+        <img class="bg-cover-img" src="{{ '/assets/img/bg/bg-home-2.jpg' | relative_url }}" alt="Home" />
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img class="bg-cover-img" src="{{ '/assets/img/bg/bg-home-3.jpg' | relative_url }}" alt="Home" />
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img class="bg-cover-img" src="{{ '/assets/img/bg/bg-home-4.jpg' | relative_url }}" alt="Home" />
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#main-carousel" data-slide="prev">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    <a class="right carousel-control" href="#main-carousel" data-slide="next">
+      <i class="fa fa-angle-right"></i>
+    </a>
   </div>
   <!-- end content-bg -->
   <!-- begin container -->
@@ -14,13 +78,5 @@
     <a href="#about" class="btn btn-theme">Explore More</a><br />
   </div>
   <!-- end container -->
-  <!-- begin usplash-photo-credit -->
-    <h6 style="position: absolute; bottom: 0; left: 15px;">
-    Photo by
-    <a href="https://unsplash.com/photos/JR8XZ-gdZrA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Henry Be</a>
-    on
-    <a href="https://unsplash.com/search/photos/widescreen-farm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  </h6>
-  <!-- end usplash-photo-credit -->
 </div>
 <!-- end #home -->
