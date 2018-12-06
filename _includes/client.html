@@ -14,7 +14,7 @@
       <div class="carousel-inner text-center">
         {% for client in site.data.clients %}
           <!-- begin item -->
-          <div class="item">
+          <div {% if forloop.first %} class="item active" {% else %} class="item" {% endif %}>
             <blockquote>
               <i class="fa fa-quote-left"></i>
               {{ client.quote }}
@@ -29,7 +29,7 @@
       <!-- begin carousel-indicators -->
       <ol class="carousel-indicators">
         {% for client in site.data.clients %}
-          <li data-target="#testimonials" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %} class="active" {% endif %}></li>
+          <li data-target="#testimonials" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %} class="active" {% else %} class="" {% endif %}></li>
         {% endfor %}
       </ol>
       <!-- end carousel-indicators -->
