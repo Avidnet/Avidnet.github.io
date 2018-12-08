@@ -9,31 +9,33 @@
   <div class="container" data-animation="true" data-animation-type="fadeInUp">
     <h2 class="content-title">Our Client Testimonials</h2>
     <!-- begin carousel -->
-    <div class="carousel testimonials slide" data-ride="carousel" id="testimonials">
-      <!-- begin carousel-inner -->
-      <div class="carousel-inner text-center">
-        {% for client in site.data.clients %}
-          <!-- begin item -->
+    {% if site.data.clients.size > 0 %}
+      <div class="carousel testimonials slide" data-ride="carousel" id="testimonials">
+        <!-- begin carousel-inner -->
+        <div class="carousel-inner text-center">
+          {% for client in site.data.clients %}
+            <!-- begin item -->
           <div {% if forloop.first %} class="item active" {% else %} class="item" {% endif %}>
-            <blockquote>
-              <i class="fa fa-quote-left"></i>
-              {{ client.quote }}
-              <i class="fa fa-quote-right"></i>
-            </blockquote>
-            <div class="name"> — <span class="text-theme">{{ client.name }}</span>, {{ client.title }}</div>
+              <blockquote>
+                <i class="fa fa-quote-left"></i>
+                {{ client.quote }}
+                <i class="fa fa-quote-right"></i>
+              </blockquote>
+              <div class="name"> — <span class="text-theme">{{ client.name }}</span>, {{ client.title }}</div>
           </div>
           <!-- end item -->
         {% endfor %}
-      </div>
-      <!-- end carousel-inner -->
-      <!-- begin carousel-indicators -->
-      <ol class="carousel-indicators">
-        {% for client in site.data.clients %}
+        </div>
+        <!-- end carousel-inner -->
+        <!-- begin carousel-indicators -->
+        <ol class="carousel-indicators">
+          {% for client in site.data.clients %}
           <li data-target="#testimonials" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %} class="active" {% else %} class="" {% endif %}></li>
-        {% endfor %}
-      </ol>
-      <!-- end carousel-indicators -->
-    </div>
+          {% endfor %}
+        </ol>
+        <!-- end carousel-indicators -->
+      </div>
+    {% endif %}
     <!-- end carousel -->
   </div>
   <!-- end containter -->
