@@ -24,11 +24,18 @@
 <![endif]-->
 <script src="{{ '/assets/plugins/js-cookie/js.cookie.js' | relative_url }}"></script>
 <script src="{{ '/assets/plugins/scrollMonitor/scrollMonitor.js' | relative_url }}"></script>
+<script src="{{ '/assets/plugins/superbox/js/jquery.superbox.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/one-page-parallax/apps.min.js' | relative_url }}"></script>
 <!-- ================== END BASE JS ================== -->
 
 <script>
   $(document).ready(function() {
     App.init();
+    $('.superbox').SuperBox({
+      background : '#242a30',
+      border : 'rgba(0,0,0,0.1)',
+      xColor : '#a8acb1',
+      xShadow : 'embed'
+    });
   });
 </script>
