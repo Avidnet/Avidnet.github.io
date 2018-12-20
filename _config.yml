@@ -6,8 +6,9 @@ project_repository: Avidnet.github.io
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-gems:
+plugins:
   - jekyll-multiple-languages-plugin
+languages: ["en", "fa"]
 exclude:
   - less
   - node_modules
