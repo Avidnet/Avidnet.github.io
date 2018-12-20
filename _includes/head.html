@@ -1,10 +1,15 @@
 <head>
   <meta charset="utf-8" />
-  <title>Avid Net Technology</title>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-  <meta content="Avid Net Technology website" name="description" />
-  <meta content="وب سایت فناروی آویدنت" name="description" />
-  <meta content="Parham Alvani" name="author" />
+  {% if site.lang == "en" %}
+    <title>Avid Net Technology</title>
+    <meta content="Avid Net Technology website" name="description" />
+    <meta content="Parham Alvani" name="author" />
+  {% elsif site.lang == "fa" %}
+    <title>فناوری آویدنت</title>
+    <meta content="وب سایت فناروی آویدنت" name="description" />
+    <meta content="پرهام الوانی" name="author" />
+  {% endif %}
 
   <!-- ================== BEGIN BASE CSS STYLE ================== -->
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
