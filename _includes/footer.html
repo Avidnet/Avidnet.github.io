@@ -1,0 +1,41 @@
+<!-- begin #footer -->
+<div id="footer" class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="{{ '/assets/img/logo-2.png' | relative_url }}" height="200px" alt="Logo" />
+    </div>
+    <p>
+      &copy; Copyright Avid Net Technology 2018 <br />
+    </p>
+    <p class="social-list">
+      <a href="https://github.com/Avidnet"><i class="fa fa-github fa-fw"></i></a>
+    </p>
+  </div>
+</div>
+<!-- end #footer -->
+
+<!-- ================== BEGIN BASE JS ================== -->
+<script src="{{ '/assets/plugins/jquery/jquery-3.2.1.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/plugins/bootstrap3/js/bootstrap.min.js' | relative_url }}"></script>
+<!--[if lt IE 9]>
+  <script src="assets/crossbrowserjs/html5shiv.js"></script>
+  <script src="assets/crossbrowserjs/respond.min.js"></script>
+  <script src="assets/crossbrowserjs/excanvas.min.js"></script>
+<![endif]-->
+<script src="{{ '/assets/plugins/js-cookie/js.cookie.js' | relative_url }}"></script>
+<script src="{{ '/assets/plugins/scrollMonitor/scrollMonitor.js' | relative_url }}"></script>
+<script src="{{ '/assets/plugins/superbox/js/jquery.superbox.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/one-page-parallax/apps.min.js' | relative_url }}"></script>
+<!-- ================== END BASE JS ================== -->
+
+<script>
+  $(document).ready(function() {
+    App.init();
+    $('.superbox').SuperBox({
+      background : '#242a30',
+      border : 'rgba(0,0,0,0.1)',
+      xColor : '#a8acb1',
+      xShadow : 'embed'
+    });
+  });
+</script>

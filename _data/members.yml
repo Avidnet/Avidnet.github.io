@@ -1,0 +1,21 @@
+- name: "Ali Parto"
+  role: "Co-Founder"
+  bio: ""
+  avatar: "https://github.com/aliparto.png"
+  url: ""
+  socials:
+    github: "https://github.com/aliparto"
+- name: "Taha Mehrabbeygi"
+  role: "Software Engineer"
+  bio: ""
+  avatar: "https://github.com/mtaha1996.png"
+  url: ""
+  socials:
+    github: "https://github.com/mtaha1996"
+# - name: "Parham Alvani"
+#  role: "Software Engineer"
+#  bio: ""
+#  avatar: "https://github.com/1995parham.png"
+#  url: "https://1995parham.github.io/"
+#  socials:
+#    github: "https://github.com/1995parham"

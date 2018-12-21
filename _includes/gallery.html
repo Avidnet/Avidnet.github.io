@@ -1,0 +1,22 @@
+<style>
+#gallery {
+  background-color: #d9e0e7;
+}
+</style>
+<div id="gallery" class="content" data-scrollview="true">
+  <!-- begin container -->
+  <div class="container" data-animation="true" data-animation-type="fadeInDown">
+    <h2 class="content-title">Our Memories</h2>
+    <!-- begin superbox -->
+    <div class="superbox" data-offset="50">
+      {% for image in site.data.gallery %}
+        <div class="superbox-list">
+          <img src="{{ image.path | relative_url }}" data-img="{{ image.path | relative_url }}" alt="Image {{ forloop.index }}" class="superbox-img">
+        </div>
+      {% endfor %}
+    </div>
+    <!-- end superbox -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end #gallery -->
