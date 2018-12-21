@@ -31,20 +31,6 @@ Website: http://www.seantheme.com/color-admin-v4.0/frontend/one-page-parallax/
 
 /* 02. Handle Header Navigation State
 ------------------------------------------------ */
-var handleHeaderNavigationState = function() {
-  $(window).on('scroll load', function() {
-    if ($('#header').attr('data-state-change') != 'disabled') {
-      var totalScroll = $(window).scrollTop();
-      var headerHeight = $('#header').height();
-      if (totalScroll >= headerHeight) {
-        $('#header').addClass('navbar-small');
-      } else {
-        $('#header').removeClass('navbar-small');
-      }
-    }
-  });
-};
-
 
 /* 03. Handle Commas to Number
 ------------------------------------------------ */
