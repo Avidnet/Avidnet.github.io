@@ -1,0 +1,14 @@
+global:
+  farsi: Farsi
+  english: English
+sections:
+  home: HOME
+  about: ABOUT
+  team: TEAM
+  solution: SOLUTION
+  work: WORK
+  client: CLIENT
+  pricing: PRICING
+  contact: CONTACT
+titles:
+  about: About Us
