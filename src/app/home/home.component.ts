@@ -11,7 +11,8 @@ export class HomeComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    this.elementHeight = event.target.innerWidth;
+    console.log('Hello');
+    this.elementHeight = event.target.innerHeight;
   }
 
   constructor() { }
