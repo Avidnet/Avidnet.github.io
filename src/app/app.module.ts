@@ -11,6 +11,7 @@ import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { TeamComponent } from './team/team.component';
 import { QouteComponent } from './qoute/qoute.component';
+import { SolutionComponent } from './solution/solution.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { QouteComponent } from './qoute/qoute.component';
     WorkComponent,
     ContactComponent,
     TeamComponent,
-    QouteComponent
+    QouteComponent,
+    SolutionComponent
   ],
   imports: [
     BrowserModule,
