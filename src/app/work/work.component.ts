@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 interface Work {
   title: string;
@@ -13,6 +13,8 @@ interface Work {
   styleUrls: ['./work.component.less']
 })
 export class WorkComponent implements OnInit {
+
+  @HostBinding('attr.class') elementClasses = 'content';
 
   public works: Work[] = [
     {
