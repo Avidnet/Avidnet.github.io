@@ -1,0 +1,36 @@
+<!-- begin #work -->
+<div id="work" class="content" data-scrollview="true">
+  <!-- begin container -->
+  <div class="container" data-animation="true" data-animation-type="fadeInDown">
+    <h2 class="content-title">Who do we work with?</h2>
+    <p class="content-desc">
+      <!--
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur eros dolor,<br />
+      sed bibendum turpis luctus eget
+      -->
+    </p>
+    <!-- begin row -->
+    <div class="row row-space-10">
+      <ng-template *ngFor="let work of works">
+        <!-- begin col-3 -->
+        <div class="col-md-3 col-sm-6">
+          <!-- begin work -->
+          <div class="work">
+            <div class="image">
+              <a href="{{ work.href }}"><img src="{{ work.image }}" alt="{{ work.title }}" height="175px" /></a>
+            </div>
+            <div class="desc">
+              <span class="desc-title">{{ work.title }}</span>
+              <span class="desc-text">{{ work.description }}</span>
+            </div>
+          </div>
+          <!-- end work -->
+        </div>
+        <!-- end col-3 -->
+      </ng-template>
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end #work -->
