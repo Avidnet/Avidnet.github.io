@@ -6,7 +6,7 @@ import { Component, OnInit, HostBinding } from '@angular/core';
   styleUrls: ['./qoute.component.less']
 })
 export class QouteComponent implements OnInit {
-  
+
   @HostBinding('attr.class') elementClasses = 'content bg-black-darker has-bg';
 
   constructor() { }
