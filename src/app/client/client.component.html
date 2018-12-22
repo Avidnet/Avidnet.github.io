@@ -1,0 +1,16 @@
+<!-- begin content-bg -->
+<div class="content-bg">
+  <img src="assets/img/bg/bg-client.jpg" alt="Client" />
+</div>
+<!-- end content-bg -->
+<!-- begin container -->
+<div class="container" data-animation="true" data-animation-type="fadeInUp">
+  <h2 class="content-title">Our Client Testimonials</h2>
+  <div *ngIf="clients" class="testimonials">
+    <div *ngFor="let client of clients">
+      <blockquote [innerHTML]="client.quote"></blockquote>
+      <div class="name"> — <span class="text-theme">{{ client.name }}</span>, {{ client.title }}</div>
+    </div>
+  </div>
+</div>
+<!-- end containter -->
