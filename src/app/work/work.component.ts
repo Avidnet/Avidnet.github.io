@@ -19,7 +19,7 @@ export class WorkComponent implements OnInit {
   public works: Work[] = [
     {
       href: 'http://www.jovainco.com/',
-      title: 'Jovain Industrial &amp; Agricultural Co.',
+      title: 'Jovain Industrial & Agricultural Co.',
       description: '',
       image: 'assets/img/works/w1.jpg'
     }
