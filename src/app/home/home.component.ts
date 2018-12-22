@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +8,11 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 export class HomeComponent implements OnInit {
   @HostBinding('attr.class') elementClasses = 'section-container p-0 bg-black-darker';
   @HostBinding('style.height.px') elementHeight = window.innerHeight;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.elementHeight = event.target.innerWidth;
+  }
 
   constructor() { }
 
