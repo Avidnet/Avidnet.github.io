@@ -14,6 +14,7 @@ import { QouteComponent } from './qoute/qoute.component';
 import { SolutionComponent } from './solution/solution.component';
 import { ActionComponent } from './action/action.component';
 import { MilestoneComponent } from './milestone/milestone.component';
+import { ClientComponent } from './client/client.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MilestoneComponent } from './milestone/milestone.component';
     QouteComponent,
     SolutionComponent,
     ActionComponent,
-    MilestoneComponent
+    MilestoneComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,
