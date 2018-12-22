@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { TeamComponent } from './team/team.component';
 import { QouteComponent } from './qoute/qoute.component';
 import { SolutionComponent } from './solution/solution.component';
+import { ActionComponent } from './action/action.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SolutionComponent } from './solution/solution.component';
     ContactComponent,
     TeamComponent,
     QouteComponent,
-    SolutionComponent
+    SolutionComponent,
+    ActionComponent
   ],
   imports: [
     BrowserModule,
