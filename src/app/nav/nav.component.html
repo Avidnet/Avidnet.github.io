@@ -14,14 +14,14 @@
     <!-- begin navbar-expand -->
     <div class="navbar-collapse" [ngbCollapse]="isCollapse">
       <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-        <li class="nav-item"><a href="#team" class="nav-link">TEAM</a></li>
-        <li class="nav-item"><a href="#service" class="nav-link">SOLUTION</a></li>
-        <li class="nav-item"><a href="#work" class="nav-link">WORK</a></li>
-        <li class="nav-item"><a href="#client" class="nav-link">CLIENT</a></li>
-        <li class="nav-item"><a href="#pricing" class="nav-link">PRICING</a></li>
-        <li class="nav-item "><a href="#contact" class="nav-link">CONTACT</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#home'" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#about'" class="nav-link">ABOUT</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#team'" class="nav-link">TEAM</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#service'" class="nav-link">SOLUTION</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#work'" class="nav-link">WORK</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#client'" class="nav-link">CLIENT</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#pricing'" class="nav-link">PRICING</a></li>
+        <li class="nav-item "><a [ngx-scroll-to]="'#contact'" class="nav-link">CONTACT</a></li>
         <li class="nav-item dropdown" ngbDropdown>
           <a class="dropdown-toggle nav-link" ngbDropdownToggle>
             PRODUCTS
