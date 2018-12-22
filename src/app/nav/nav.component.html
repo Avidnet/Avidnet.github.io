@@ -1,0 +1,39 @@
+<nav class="header navbar navbar-transparent fixed-top" [class.navbar-small]="hasScroll">
+  <!-- begin container -->
+  <div class="container">
+    <!-- begin navbar-brand -->
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/img/logo-1.png" alt="Logo" />
+    </a>
+    <!-- end navbar-brand -->
+    <button class="navbar-toggler" (click)="isCollapse=!isCollapse" type="button" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!-- begin navbar-expand -->
+    <div class="navbar-collapse" [ngbCollapse]="isCollapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#home" data-click="scroll-to-target">HOME</a></li>
+        <li><a href="#about" data-click="scroll-to-target">ABOUT</a></li>
+        <li><a href="#team" data-click="scroll-to-target">TEAM</a></li>
+        <li><a href="#solution" data-click="scroll-to-target">SOLUTION</a></li>
+        <li><a href="#work" data-click="scroll-to-target">WORK</a></li>
+        <li><a href="#client" data-click="scroll-to-target">CLIENT</a></li>
+        <li><a href="#pricing" data-click="scroll-to-target">PRICING</a></li>
+        <li><a href="#contact" data-click="scroll-to-target">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">
+            PRODUCTS
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="/rancal">Rancal</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- end navbar-expand -->
+  </div>
+  <!-- end container -->
+</nav>
