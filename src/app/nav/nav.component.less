@@ -40,7 +40,7 @@
 
 /* Navbar Mobile Toggle */
 
-.navbar-toggle {
+.navbar-toggler {
   margin-top: 18px;
   margin-bottom: 18px;
   .transition(all .2s linear);
@@ -58,7 +58,6 @@
 
 .header.navbar.navbar-transparent {
   border-bottom: 1px solid rgba(255,255,255,0.2);
-  background-color: transparent;
 }
 .header.navbar.navbar-transparent .navbar-nav > li > a,
 .header.navbar.navbar-inverse .navbar-nav > li > a {
@@ -68,13 +67,13 @@
 .header.navbar.navbar-inverse .brand-text {
   color: #fff;
 }
-.navbar-transparent .navbar-toggle,
-.navbar-inverse .navbar-toggle {
+.navbar-transparent .navbar-toggler,
+.navbar-inverse .navbar-toggler {
   border-color: #8F8E8E;
 }
-.navbar-transparent .navbar-toggle .icon-bar,
-.navbar-inverse .navbar-toggle .icon-bar {
-  background: #8f8e8e;
+.navbar-transparent .navbar-toggler .navbar-toggler-icon,
+.navbar-inverse .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#8f8e8e' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 
@@ -96,13 +95,13 @@
     color: #2d353c;
   }
 }
-.navbar-small .navbar-toggle {
+.navbar-small .navbar-toggler {
   border-color: #ddd;
   margin-top: 8px;
   margin-bottom: 8px;
 
-  & .icon-bar {
-    background: #888;
+  & .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#888' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
 }
 
