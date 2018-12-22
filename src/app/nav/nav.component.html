@@ -1,4 +1,4 @@
-<nav class="header navbar navbar-transparent fixed-top" [class.navbar-small]="hasScroll">
+<nav class="header navbar navbar-expand-lg navbar-transparent fixed-top" [class.navbar-small]="hasScroll">
   <!-- begin container -->
   <div class="container">
     <!-- begin navbar-brand -->
@@ -14,22 +14,22 @@
     <!-- begin navbar-expand -->
     <div class="navbar-collapse" [ngbCollapse]="isCollapse">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#home" data-click="scroll-to-target">HOME</a></li>
-        <li><a href="#about" data-click="scroll-to-target">ABOUT</a></li>
-        <li><a href="#team" data-click="scroll-to-target">TEAM</a></li>
-        <li><a href="#solution" data-click="scroll-to-target">SOLUTION</a></li>
-        <li><a href="#work" data-click="scroll-to-target">WORK</a></li>
-        <li><a href="#client" data-click="scroll-to-target">CLIENT</a></li>
-        <li><a href="#pricing" data-click="scroll-to-target">PRICING</a></li>
-        <li><a href="#contact" data-click="scroll-to-target">CONTACT</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">
+        <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+        <li class="nav-item"><a href="#team" class="nav-link">TEAM</a></li>
+        <li class="nav-item"><a href="#service" class="nav-link">SOLUTION</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link">WORK</a></li>
+        <li class="nav-item"><a href="#client" class="nav-link">CLIENT</a></li>
+        <li class="nav-item"><a href="#pricing" class="nav-link">PRICING</a></li>
+        <li class="nav-item "><a href="#contact" class="nav-link">CONTACT</a></li>
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="dropdown-toggle nav-link" ngbDropdownToggle>
             PRODUCTS
             <span class="caret"></span>
           </a>
-          <ul class="dropdown-menu">
-            <li><a href="/rancal">Rancal</a></li>
-          </ul>
+          <div class="dropdown-menu" ngbDropdownMenu>
+            <a href="/rancal" class="dropdown-item">Rancal</a>
+          </div>
         </li>
       </ul>
     </div>
