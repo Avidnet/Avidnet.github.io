@@ -7,7 +7,7 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  @HostBinding('attr.class') elementClasses = ['content'];
+  @HostBinding('attr.class') elementClasses = 'content';
 
   constructor() { }
 

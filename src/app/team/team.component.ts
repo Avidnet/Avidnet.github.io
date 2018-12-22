@@ -16,7 +16,7 @@ interface Member {
 })
 export class TeamComponent implements OnInit {
 
-  @HostBinding('attr.class') elementClasses = ['content'];
+  @HostBinding('attr.class') elementClasses = 'content';
 
   public members: Member[] = [{
     name: 'Ali Parto',
