@@ -8,8 +8,17 @@
   <h2 class="content-title">Our Client Testimonials</h2>
   <div *ngIf="clients" class="testimonials">
     <div *ngFor="let client of clients">
-      <blockquote [innerHTML]="client.quote"></blockquote>
-      <div class="name"> — <span class="text-theme">{{ client.name }}</span>, {{ client.title }}</div>
+      <ng-container *ngIf="client.show === true">
+        <blockquote
+          innerHTML='
+          <i class="fa fa-quote-left"></i>
+          {{client.quote}}
+          <i class="fa fa-quote-right"></i>
+          '
+          >
+        </blockquote>
+        <div class="name"> — <span class="text-theme">{{ client.name }}</span>, {{ client.title }}</div>
+      </ng-container>
     </div>
   </div>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 
 interface Client {
+  show: boolean;
   name: string;
   title: string;
   quote: string;
@@ -16,9 +17,10 @@ export class ClientComponent implements OnInit {
   @HostBinding('attr.class') elementClasses = 'content has-bg bg-green';
 
   public clients: Client[] = [{
+    show: true,
     name: 'Joveyn',
     title: 'CEO',
-    quote: 'Agriculture needs redesign <br /> and Avid does it'
+    quote: 'Agriculture needs redesign <br> and Avid does it'
   }];
 
   constructor() { }
