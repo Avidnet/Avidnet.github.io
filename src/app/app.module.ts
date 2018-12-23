@@ -19,6 +19,7 @@ import { ActionComponent } from './action/action.component';
 import { MilestoneComponent } from './milestone/milestone.component';
 import { ClientComponent } from './client/client.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { PricingComponent } from './pricing/pricing.component';
     ActionComponent,
     MilestoneComponent,
     ClientComponent,
-    PricingComponent
+    PricingComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
