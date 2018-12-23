@@ -6,20 +6,18 @@
 <!-- begin container -->
 <div class="container" data-animation="true" data-animation-type="fadeInUp">
   <h2 class="content-title">Our Client Testimonials</h2>
-  <div *ngIf="clients" class="testimonials">
-    <div *ngFor="let client of clients">
-      <ng-container *ngIf="client.show === true">
-        <blockquote
-          innerHTML='
-          <i class="fa fa-quote-left"></i>
-          {{client.quote}}
-          <i class="fa fa-quote-right"></i>
-          '
-          >
-        </blockquote>
-        <div class="name"> — <span class="text-theme">{{ client.name }}</span>, {{ client.title }}</div>
-      </ng-container>
-    </div>
-  </div>
+  <ngb-carousel *ngIf="clients" class="testimonials" [showNavigationArrows]="false">
+    <ng-template *ngFor="let client of clients" ngbSlide>
+      <blockquote
+        innerHTML='
+        <i class="fa fa-quote-left"></i>
+        {{client.quote}}
+        <i class="fa fa-quote-right"></i>
+        '
+           >
+      </blockquote>
+      <div class="name"> — <span class="text-theme">{{ client.name }}</span>, {{ client.title }}</div>
+    </ng-template>
+  </ngb-carousel>
 </div>
 <!-- end containter -->

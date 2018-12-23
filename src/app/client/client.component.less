@@ -41,4 +41,25 @@
       margin-left: 5px;
     }
   }
+
+  &.carousel {
+    ::ng-deep .carousel-indicators li {
+      background: rgba(255,255,255,0.4);
+      border: none;
+      .transition(all .2s linear);
+    }
+    ::ng-deep .carousel-indicators li:hover,
+    ::ng-deep .carousel-indicators li:focus {
+      background: rgba(255,255,255,0.7);
+    }
+    ::ng-deep .carousel-indicators li.active {
+      background: #fff;
+    }
+    ::ng-deep .carousel-indicators li,
+    ::ng-deep .carousel-indicators li.active {
+      width: 12px;
+      height: 12px;
+      margin: 1px 3px;
+    }
+  }
 }
