@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { GalleryModule } from '@ngx-gallery/core';
+import {TranslateModule} from '@ngx-translate/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -44,7 +45,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     BrowserAnimationsModule,
     NgbModule,
     ScrollToModule.forRoot(),
-    GalleryModule
+    GalleryModule,
+    TranslateModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
