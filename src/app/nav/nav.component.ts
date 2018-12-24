@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav',
@@ -23,7 +24,15 @@ export class NavComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  public changeLanguage() {
+    if (this.translate.currentLang === 'en') {
+      this.translate.use('fa');
+    } else {
+      this.translate.use('en');
+    }
+  }
+
+  constructor(public translate: TranslateService) { }
 
   ngOnInit() {
   }
