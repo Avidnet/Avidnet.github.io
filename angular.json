@@ -56,37 +56,7 @@
                   "maximumError": "5mb"
                 }
               ]
-            },
-            "production:fa": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "i18nFile": "src/i18n/messages.fa.xlf",
-              "i18nLocale": "fa",
-              "i18nFormat": "xlf",
-              "i18nMissingTranslation": "ignore",
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "outputPath": "dist/fa/",
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
             }
-          }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
