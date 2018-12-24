@@ -3,5 +3,16 @@
     "WELCOME": "Welcome to<br />Avid Net Technology",
     "SLOGAN": "Toch the future right now",
     "EXPLORE": "Explore More"
+  },
+  "NAV": {
+    "HOME": "home",
+    "ABOUT": "about",
+    "TEAM": "team",
+    "SOLUTION": "solution",
+    "WORK": "work",
+    "CLIENT": "client",
+    "PRICING": "pricing",
+    "CONTACT": "contact",
+    "GALLERY": "gallery"
   }
 }
