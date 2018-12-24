@@ -21,7 +21,7 @@ export class TeamComponent implements OnInit {
   public members: Member[] = [{
     name: 'Ali Parto',
     role: 'Co-Founder',
-    bio: '',
+    bio: 'Our hardware man',
     avatar: 'https://github.com/aliparto.png',
     url: '',
     socials: {
@@ -30,7 +30,7 @@ export class TeamComponent implements OnInit {
   }, {
     name: 'Taha Mehrabbeygi',
     role: 'Software Engineer',
-    bio: '',
+    bio: 'The man of everything',
     avatar: 'https://github.com/mtaha1996.png',
     url: '',
     socials: {
@@ -39,11 +39,11 @@ export class TeamComponent implements OnInit {
   }, {
     name: 'Parham Alvani',
     role: 'Software Engineer',
-    bio: '',
+    bio: 'Our software man',
     avatar: 'https://github.com/1995parham.png',
     url: 'https://1995parham.github.io/',
     socials: {
-      github: 'https://github.com/1995parham'
+      github: 'https://github.com/1995parham',
     }
   }];
 
