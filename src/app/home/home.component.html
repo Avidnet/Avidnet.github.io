@@ -49,10 +49,10 @@
 <!-- end content-bg -->
 <!-- begin container -->
 <div class="container home-content">
-  <h1>Welcome to<br />Avid Net Technology</h1>
-  <h3>Touch the Future Right Now</h3>
+  <h1 [innerHTML]="'HOME.WELCOME' | translate"></h1>
+  <h3 [innerHTML]="'HOME.SLOGAN' | translate"></h3>
   <p>
   </p>
-  <a [ngx-scroll-to]="'#about'"  href="#about" class="btn btn-theme">Explore More</a><br />
+  <a [ngx-scroll-to]="'#about'"  href="#about" class="btn btn-theme">{{ 'HOME.EXPLORE' | translate }}</a><br />
 </div>
 <!-- end container -->
