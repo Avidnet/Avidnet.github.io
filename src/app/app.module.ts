@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { GalleryModule } from  '@ngx-gallery/core';
+import { GalleryModule } from '@ngx-gallery/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';

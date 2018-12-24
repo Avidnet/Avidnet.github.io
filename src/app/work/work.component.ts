@@ -23,7 +23,7 @@ export class WorkComponent implements OnInit {
       description: '',
       image: 'assets/img/works/w1.jpg'
     }
-  ]
+  ];
 
   constructor() { }
 

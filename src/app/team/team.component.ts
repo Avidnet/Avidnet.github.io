@@ -6,7 +6,7 @@ interface Member {
   bio: string;
   avatar: string;
   url: string;
-  socials: { [key:string]:string; };
+  socials: { [key: string]: string; };
 }
 
 @Component({
