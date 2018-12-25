@@ -1,6 +1,6 @@
 <!-- begin container -->
 <div class="container">
-  <h2 class="content-title">Contact Us</h2>
+  <h2 class="content-title">{{ 'CONTACT.HEADER' | translate }}</h2>
   <p class="content-desc">
     <!--
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur eros dolor,<br />
@@ -11,17 +11,13 @@
   <div class="row">
     <!-- begin col-6 -->
     <div class="col-md-6 animated slow fadeInLeft">
-      <h3>All opinions are welcome here</h3>
+      <h3>{{ 'CONTACT.OPINION' | translate }}</h3>
       <p>
       </p>
-      <p>
-        <strong>Avid Net Technology</strong><br />
-        3th Unit, First Floor, No 2. 3th Yas, Golha Blvd<br />
-        Golestan Township, Tehran, Iran<br />
-        P: 1494716653<br />
+      <p [innerHTML]="'CONTACT.ADDRESS' | translate">
       </p>
-      <p>
-        <span class="phone">+98 (21) 4470 7353</span><br />
+      <p dir="ltr">
+        <span class="phone">{{ 'CONTACT.TEL' | translate }}</span><br />
         <a href="mailto:hello@avidnet.io">hello@avidnet.io</a>
       </p>
     </div>
