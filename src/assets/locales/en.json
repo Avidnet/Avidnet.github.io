@@ -20,5 +20,8 @@
     "OPINION": "All opinions are welcome here",
     "ADDRESS": "<strong>Avid Net Technology</strong><br />3th Unit, First Floor, No 2. 3th Yas, Golha Blvd<br />Golestan Township, Tehran, Iran<br />P: 1494716653<br />",
     "TEL": "+98 (21) 4470 7353"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "&copy; Copyright Avid Net Technology 2018 <br />"
   }
 }
