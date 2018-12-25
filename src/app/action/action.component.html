@@ -12,15 +12,14 @@
       <div class="icon-large text-theme">
         <i class="fa fa-binoculars"></i>
       </div>
-      <h3><a href="https://platform.avidnet.io">CHECK OUT OUR IOT PLATFORM!</a></h3>
-      <p>
-        FANIoT is a basis to all Avidnet solutions.
+      <h3><a href="https://platform.avidnet.io">{{ 'ACTION.CHECKOUT' | translate }}</a></h3>
+      <p [innerHTML]="'ACTION.DESCRIPTION' | translate">
       </p>
     </div>
     <!-- end col-9 -->
     <!-- begin col-3 -->
     <div class="col-md-3 col-sm-3">
-      <a href="https://platform.avidnet.io" class="btn btn-outline btn-block">Live Preview</a>
+      <a href="https://platform.avidnet.io" class="btn btn-outline btn-block">{{ 'ACTION.PREVIEW' | translate }}</a>
     </div>
     <!-- end col-3 -->
   </div>
