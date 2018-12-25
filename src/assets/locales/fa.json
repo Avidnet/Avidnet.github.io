@@ -10,9 +10,13 @@
     "TEAM": "تیم",
     "SOLUTION": "راهکار",
     "WORK": "کار",
-    "CLIENT": "مشرتی",
+    "CLIENT": "مشتری",
     "PRICING": "قیمتها",
-    "CONTACT": "ارتبار",
+    "CONTACT": "ارتباط",
     "GALLERY": "گالری"
+  },
+  "CONTACT": {
+    "HEADER": "ارتباط با ما",
+    "ADDRESS": "<strong>فناوری آویدنت</strong>"
   }
 }
