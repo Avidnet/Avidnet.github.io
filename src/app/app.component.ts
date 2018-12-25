@@ -16,7 +16,7 @@ export class AppComponent {
     translate.use(browserLang.match(/en|fa/) ? browserLang : 'en');
 
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
-      if (event.lang == 'fa') {
+      if (event.lang === 'fa') {
         renderer.addClass(document.body, 'farsi');
         renderer.setAttribute(document.body.parentNode, 'dir', 'rtl');
         renderer.setAttribute(document.body.parentNode, 'lang', 'fa');
