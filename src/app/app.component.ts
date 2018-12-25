@@ -18,8 +18,12 @@ export class AppComponent {
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
       if (event.lang == 'fa') {
         renderer.addClass(document.body, 'farsi');
+        renderer.setAttribute(document.body.parentNode, 'dir', 'rtl');
+        renderer.setAttribute(document.body.parentNode, 'lang', 'fa');
       } else {
         renderer.removeClass(document.body, 'farsi');
+        renderer.setAttribute(document.body.parentNode, 'dir', 'ltr');
+        renderer.setAttribute(document.body.parentNode, 'lang', 'en');
       }
     });
   }
