@@ -23,5 +23,14 @@
   },
   "FOOTER": {
     "COPYRIGHT": "&copy; تمامی حقوق این وب‌سایت برای فناوری آوید نت محفوظ است<br />"
-  }
+  },
+  "GALLERY": {
+    "HEADER": "خاطرات ما"
+  },
+  "ACTION": {
+    "PREVIEW": "نمایش زنده",
+    "CHECKOUT": "پلتفرم ما را ببینید!",
+    "DESCRIPTION": "FANIoT پایه تمام راه‌کارهای آویدنت است."
+  },
+  "QOUTE": "<i class='fa fa-quote-right'></i><span class='text-theme'>بی‌مرز</span> تصور کنید,<br /><span class='text-theme'>کوچک</span>آغاز کنید<i class='fa fa-quote-left'></i><small>تیم نرم‌افزاری آویدنت</small>"
 }

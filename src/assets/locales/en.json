@@ -23,5 +23,14 @@
   },
   "FOOTER": {
     "COPYRIGHT": "&copy; Copyright Avid Net Technology 2018 <br />"
-  }
+  },
+  "GALLERY": {
+    "HEADER": "Our Memories"
+  },
+  "ACTION": {
+    "PREVIEW": "Live Preview",
+    "CHECKOUT": "CHECK OUT OUR IOT PLATFORM!",
+    "DESCRIPTION": "FANIoT is a basis to all Avidnet solutions."
+  },
+  "QOUTE": "<i class='fa fa-quote-left'></i>Imagine <span class='text-theme'>boundless</span>,<br />Start <span class='text-theme'>Small</span><i class='fa fa-quote-right'></i><small>Avidnet Software Team</small>"
 }
