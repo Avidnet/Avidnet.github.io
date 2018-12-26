@@ -32,5 +32,14 @@
     "CHECKOUT": "CHECK OUT OUR IOT PLATFORM!",
     "DESCRIPTION": "FANIoT is a basis to all Avidnet solutions."
   },
-  "QOUTE": "<i class='fa fa-quote-left'></i>Imagine <span class='text-theme'>boundless</span>,<br />Start <span class='text-theme'>Small</span><i class='fa fa-quote-right'></i><small>Avidnet Software Team</small>"
+  "QOUTE": "<i class='fa fa-quote-left'></i>Imagine <span class='text-theme'>boundless</span>,<br />Start <span class='text-theme'>Small</span><i class='fa fa-quote-right'></i><small>Avidnet Software Team</small>",
+  "ABOUT": {
+    "HEADER": "About Us",
+    "DESCRIPTION": "Avid Net Technology is a software and product engineering services company focused on developing Internet of Things (IoT) total solutions for the smart connected environment.",
+    "PHILOSOPHY": {
+      "HEADER": "Our Philosophy",
+      "QOUTE": "<i class='fa fa-quote-left'></i><h3>Our customers do not need to be at their desks,<br /><span>the requirement will come itself!</span></h3><i class='fa fa-quote-right'></i>",
+      "MAN": "Avidnet Chairman of the Board"
+    }
+  }
 }
