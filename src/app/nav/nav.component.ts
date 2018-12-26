@@ -24,11 +24,11 @@ export class NavComponent implements OnInit {
     }
   }
 
-  public changeLanguage() {
+  public changeLanguageLink(): string {
     if (this.translate.currentLang === 'en') {
-      this.translate.use('fa');
+      return 'fa';
     } else {
-      this.translate.use('en');
+      return 'en';
     }
   }
 

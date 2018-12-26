@@ -8,7 +8,7 @@
     <div class="navbar-expand">
       <ul class="nav navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" (click)="changeLanguage()">{{ translate.currentLang === 'en' ? 'English' : 'فارسی' }}</a>
+          <a class="nav-link" [routerLink]="['', changeLanguageLink()]">{{ translate.currentLang === 'en' ? 'English' : 'فارسی' }}</a>
         </li>
       </ul>
     </div>
