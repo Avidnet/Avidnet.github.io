@@ -1,8 +1,8 @@
 <!-- begin container -->
 <div class="container" data-animation="true" data-animation-type="fadeInDown">
-  <h2 class="content-title">About Us</h2>
+  <h2 class="content-title">{{ 'ABOUT.HEADER' | translate }}</h2>
   <p class="content-desc">
-    Avid Net Technology is a software and product engineering services company focused on developing Internet of Things (IoT) total solutions for the smart connected environment.
+    {{ 'ABOUT.DESCRIPTION' | translate }}
   </p>
   <!-- begin row -->
   <div class="row">
@@ -25,21 +25,17 @@
     <!-- end col-4 -->
     <!-- begin col-4 -->
     <div class="col-lg-4 col-md-6">
-      <h3>Our Philosophy</h3>
+      <h3>{{ 'ABOUT.PHILOSOPHY.HEADER' | translate }}</h3>
       <!-- begin about-author -->
       <div class="about-author">
-        <div class="quote bg-silver">
-          <i class="fa fa-quote-left"></i>
-          <h3>Our customers do not need to be at their desks,<br />
-            <span>the requirement will come itself!</span></h3>
-          <i class="fa fa-quote-right"></i>
+        <div class="quote bg-silver" [innerHTML]="'ABOUT.PHILOSOPHY.QOUTE' | translate">
         </div>
         <div class="author">
           <div class="image">
             <img src="../assets/img/logo/logo-3.png" alt="Avidnet" />
           </div>
           <div class="info">
-            Avidnet
+            {{ 'ABOUT.PHILOSOPHY.MAN' | translate }}
             <small></small>
           </div>
         </div>
