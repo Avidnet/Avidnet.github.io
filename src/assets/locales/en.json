@@ -44,6 +44,8 @@
   },
   "TEAM": {
     "HEADER": "Our Team",
+    "QUOTE": "<span class='text-theme'>Extraordinary</span> stories<br />are written by <span class='text-theme'>Doers</span>",
+    "DESCRIPTION": "Our skilled, creative and highly motivated FAN team members are made up of specialists in system design and integration, electrical and software engineering, GIS and remote sensing, data mining, agriculture and also administration.",
     "ROLE": {
       "SE": "Software Engineer",
       "CF": "Co-Founder",
