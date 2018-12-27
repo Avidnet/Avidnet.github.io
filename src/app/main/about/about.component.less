@@ -7,7 +7,7 @@
 .about-author {
   position: relative;
 
-  & .quote {
+  ::ng-deep & .quote {
     position: relative;
     padding: 30px 60px;
     margin-bottom: 15px;
@@ -29,25 +29,34 @@
       font-style: italic;
       line-height: 30px;
     }
-  }
-  & .fa.fa-quote-left,
-  & .fa.fa-quote-right {
-    font-size: 14px;
-    position: absolute;
-    left: 30px;
-    top: 50%;
-    margin-top: -14px;
-    line-height: 28px;
-    top: 30px;
-    color: #D5D9DA;
-  }
-  & .fa.fa-quote-right {
-    left: auto;
-    right: 30px;
-    bottom: 30px;
-    margin-top: 0;
-    margin-bottom: -14px;
-    top: auto;
+    & .fa.fa-quote-left,
+    & .fa.fa-quote-right {
+      font-size: 28px;
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      margin-top: -14px;
+      line-height: 28px;
+      top: 30px;
+      color: #D5D9DA;
+    }
+    ::ng-deep body:not(.farsi) & .fa.fa-quote-right {
+      left: auto;
+      right: 30px;
+      bottom: 30px;
+      margin-top: 0;
+      margin-bottom: -14px;
+      top: auto;
+    }
+    ::ng-deep body.farsi & .fa.fa-quote-left {
+      left: auto;
+      right: 30px;
+      bottom: 30px;
+      margin-top: 0;
+      margin-bottom: -14px;
+      top: auto;
+    }
+
   }
   & .author {
     position: relative;
@@ -91,22 +100,22 @@
 
 
 @media (min-width: 1920px) {
-	.about-author .author .info {
-		font-size: 16px;
-		
-		& small {
-			font-size: 14px;
-		}
-	}
+  .about-author .author .info {
+    font-size: 16px;
+
+    & small {
+      font-size: 14px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
-    .about-author .author {
-        padding-left: 80px;
-        & .image {
-            width: 80px;
-        }
+  .about-author .author {
+    padding-left: 80px;
+    & .image {
+      width: 80px;
     }
+  }
 }
 
 /* About Us Skills Setting */
