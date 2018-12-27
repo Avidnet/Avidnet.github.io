@@ -29,7 +29,7 @@ export class AppComponent {
 
     router.events.subscribe((event: Event) => {
       if (event instanceof NavigationStart) {
-        const locale = event.url.split('/')[1]; // read the locale part of the current url
+        const locale = event.url.split('/')[1].split('#')[0]; // read the locale part of the current url
         if (locale && locale === 'fa') {
           translate.use('fa');
         } else {
