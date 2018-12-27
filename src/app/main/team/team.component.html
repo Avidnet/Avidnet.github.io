@@ -26,8 +26,8 @@
             <img src="{{member.avatar}}" alt="{{member.name}}" height="200px" />
           </div>
           <div class="info">
-            <h3 class="name">{{member.name}}</h3>
-            <div class="title text-theme">{{member.role}}</div>
+            <h3 class="name">{{ translate.currentLang === 'fa' && member.nameFa ?  member.nameFa : member.name }}</h3>
+            <div class="title text-theme">{{ 'TEAM.ROLE.' + member.role | translate }}</div>
             <p>{{member.bio}}</p>
             <div class="social">
               <a *ngIf="member.url != ''" href="{{member.url}}"><i class="fas fa-home fa-lg fa-fw"></i></a>

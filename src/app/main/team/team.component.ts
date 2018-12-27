@@ -1,7 +1,9 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 interface Member {
   name: string;
+  nameFa?: string;
   role: string;
   bio: string;
   avatar: string;
@@ -20,7 +22,8 @@ export class TeamComponent implements OnInit {
 
   public members: Member[] = [{
     name: 'Ali Parto',
-    role: 'Co-Founder',
+    nameFa: 'علی پرتو',
+    role: 'CF',
     bio: 'Our hardware man',
     avatar: 'https://github.com/aliparto.png',
     url: '',
@@ -29,7 +32,8 @@ export class TeamComponent implements OnInit {
     }
   }, {
     name: 'Taha Mehrabbeygi',
-    role: 'Software Engineer',
+    nameFa: 'طه مهراب بیگی',
+    role: 'SE',
     bio: 'The man of everything',
     avatar: 'https://github.com/mtaha1996.png',
     url: '',
@@ -38,7 +42,8 @@ export class TeamComponent implements OnInit {
     }
   }, {
     name: 'Parham Alvani',
-    role: 'Software Engineer',
+    nameFa: 'پرهام الوانی',
+    role: 'SE',
     bio: 'Our software man',
     avatar: 'https://github.com/1995parham.png',
     url: 'https://1995parham.github.io/',
@@ -47,7 +52,9 @@ export class TeamComponent implements OnInit {
     }
   }];
 
-  constructor() { }
+  constructor(
+    public translate: TranslateService,
+  ) { }
 
   ngOnInit() {
   }
