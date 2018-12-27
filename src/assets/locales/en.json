@@ -59,5 +59,10 @@
       "CF": "Co-Founder",
       "HE": "Hardware Engineer"
     }
+  },
+  "SOLUTIONS": {
+    "HEADER": "Our Solutions",
+    "DESCRIPTION": "Avidnet provides you with smart solutions that improve your productivity.",
+    "LETGO": "Let's Go!"
   }
 }
