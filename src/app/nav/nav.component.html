@@ -8,7 +8,7 @@
     <div class="navbar-expand">
       <ul class="nav navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['', changeLanguageLink()]">{{ translate.currentLang === 'en' ? 'English' : 'فارسی' }}</a>
+          <a class="nav-link" [routerLink]="['./', changeLanguageLink()]" preserveFragment>{{ translate.currentLang === 'en' ? 'English' : 'فارسی' }}</a>
         </li>
       </ul>
     </div>
@@ -21,15 +21,15 @@
     <!-- begin navbar-expand -->
     <div class="navbar-collapse justify-content-end" [ngbCollapse]="isCollapse">
       <ul class="nav navbar-nav">
-        <li class="nav-item"><a [ngx-scroll-to]="'#home'" href="#home" class="nav-link">{{ 'NAV.HOME' | translate | uppercase }}</a></li>
-        <li class="nav-item"><a [ngx-scroll-to]="'#about'" href="#about" class="nav-link">{{ 'NAV.ABOUT' | translate | uppercase }}</a></li>
-        <li class="nav-item"><a [ngx-scroll-to]="'#team'" href="#team" class="nav-link">{{ 'NAV.TEAM' | translate | uppercase }}</a></li>
-        <li class="nav-item"><a [ngx-scroll-to]="'#service'" href="#service" class="nav-link">{{ 'NAV.SOLUTION' | translate | uppercase }}</a></li>
-        <li class="nav-item"><a [ngx-scroll-to]="'#work'" href="#work" class="nav-link">{{ 'NAV.WORK' | translate | uppercase }}</a></li>
-        <li class="nav-item"><a [ngx-scroll-to]="'#client'" href="#client" class="nav-link">{{ 'NAV.CLIENT' | translate | uppercase }}</a></li>
-        <li class="nav-item"><a [ngx-scroll-to]="'#pricing'" href="#pricing" class="nav-link">{{ 'NAV.PRICING' | translate | uppercase }}</a></li>
-        <li class="nav-item "><a [ngx-scroll-to]="'#contact'" href="#contact" class="nav-link">{{ 'NAV.CONTACT' | translate | uppercase }}</a></li>
-        <li class="nav-item "><a [ngx-scroll-to]="'#gallery'" href="#gallery" class="nav-link">{{ 'NAV.GALLERY' | translate | uppercase }}</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#home'" [routerLink]="[]" fragment="home" class="nav-link">{{ 'NAV.HOME' | translate | uppercase }}</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#about'" [routerLink]="[]" fragment="about" class="nav-link">{{ 'NAV.ABOUT' | translate | uppercase }}</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#team'" [routerLink]="[]" fragment="team" class="nav-link">{{ 'NAV.TEAM' | translate | uppercase }}</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#service'" [routerLink]="[]" fragment="service" class="nav-link">{{ 'NAV.SOLUTION' | translate | uppercase }}</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#work'" [routerLink]="[]" fragment="work" class="nav-link">{{ 'NAV.WORK' | translate | uppercase }}</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#client'" [routerLink]="[]" fragment="client" class="nav-link">{{ 'NAV.CLIENT' | translate | uppercase }}</a></li>
+        <li class="nav-item"><a [ngx-scroll-to]="'#pricing'" [routerLink]="[]" fragment="pricing" class="nav-link">{{ 'NAV.PRICING' | translate | uppercase }}</a></li>
+        <li class="nav-item "><a [ngx-scroll-to]="'#contact'" [routerLink]="[]" fragment="contact" class="nav-link">{{ 'NAV.CONTACT' | translate | uppercase }}</a></li>
+        <!-- <li class="nav-item "><a [ngx-scroll-to]="'#gallery'" [routerLink]="[]" fragment="gallery" class="nav-link">{{ 'NAV.GALLERY' | translate | uppercase }}</a></li> -->
         <!--
         <li class="nav-item dropdown" ngbDropdown>
           <a class="dropdown-toggle nav-link" ngbDropdownToggle>
