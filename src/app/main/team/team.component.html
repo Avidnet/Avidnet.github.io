@@ -25,11 +25,11 @@
           <div class="image" data-animation="true" data-animation-type="flipInX">
             <img src="{{member.avatar}}" alt="{{member.name}}" height="200px" />
           </div>
-          <div class="info">
+          <div class="info text-center">
             <h3 class="name">{{ translate.currentLang === 'fa' && member.nameFa ?  member.nameFa : member.name }}</h3>
-            <div class="title text-theme">{{ 'TEAM.ROLE.' + member.role | translate }}</div>
+            <div class="title text-theme text-center">{{ 'TEAM.ROLE.' + member.role | translate }}</div>
             <p>{{member.bio}}</p>
-            <div class="social">
+            <div class="social text-center">
               <a *ngIf="member.url != ''" href="{{member.url}}"><i class="fas fa-home fa-lg fa-fw"></i></a>
               <a *ngFor="let social of member.socials | keyvalue" href="{{social.value}}"><i class="fab fa-{{social.key}} fa-lg fa-fw"></i></a>
             </div>
