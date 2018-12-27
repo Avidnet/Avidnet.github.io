@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href '/' && npx ngh --dir=dist/avidnet",
+    "build": "ng build",
+    "publish": "ng build --prod --base-href '/' && npx ngh --dir=dist/avidnet",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
