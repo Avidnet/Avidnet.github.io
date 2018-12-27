@@ -17,12 +17,14 @@ export class WorkComponent implements OnInit {
   @HostBinding('attr.class') elementClasses = 'content';
 
   public works: Work[] = [
+    /*
     {
       href: 'http://www.jovainco.com/',
       title: 'Jovain Industrial & Agricultural Co.',
       description: '',
       image: 'assets/img/works/w1.jpg'
     }
+    */
   ];
 
   constructor() { }

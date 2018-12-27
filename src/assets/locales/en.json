@@ -64,5 +64,11 @@
     "HEADER": "Our Solutions",
     "DESCRIPTION": "Avidnet provides you with smart solutions that improve your productivity.",
     "LETGO": "Let's Go!"
+  },
+  "PRICING": {
+    "HEADER": "Our prices"
+  },
+  "WORK": {
+    "HEADER": "Who do we work with?"
   }
 }
