@@ -1,5 +1,5 @@
 import { Component, Renderer2 } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Router, Event, NavigationStart } from '@angular/router';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 
 @Component({
@@ -11,7 +11,7 @@ export class AppComponent {
   constructor(
     renderer: Renderer2,
     translate: TranslateService,
-    route: ActivatedRoute,
+    router: Router,
   ) {
     translate.setDefaultLang('en');
 
@@ -27,13 +27,15 @@ export class AppComponent {
       }
     });
 
-    route.paramMap.subscribe((params: ParamMap) => {
-      const locale = params.get('locale');
-      console.log(locale);
-      if (locale && locale === 'fa') {
-        translate.use('fa');
-      } else {
-        translate.use('en');
+    router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationStart) {
+        const locale = event.url.split('/')[1]; // read the locale part of the current url
+        console.log(locale);
+        if (locale && locale === 'fa') {
+          translate.use('fa');
+        } else {
+          translate.use('en');
+        }
       }
     });
   }
