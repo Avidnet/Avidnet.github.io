@@ -41,5 +41,12 @@
       "QOUTE": "<i class='fa fa-quote-left'></i><h3>Our customers do not need to be at their desks,<br /><span>the requirement will come itself!</span></h3><i class='fa fa-quote-right'></i>",
       "MAN": "Avidnet Chairman of the Board"
     }
+  },
+  "TEAM": {
+    "ROLE": {
+      "SE": "Software Engineer",
+      "CF": "Co-Founder",
+      "HE": "Hardware Engineer"
+    }
   }
 }
