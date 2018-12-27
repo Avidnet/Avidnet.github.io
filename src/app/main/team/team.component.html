@@ -4,15 +4,12 @@
   <!-- begin row -->
   <div class="row">
     <!-- begin col-12 -->
-    <div class="col-md-12 quote">
-      <span class="text-theme">Extraordinary</span> stories<br />
-      are written by <span class="text-theme">Doers</span>
+    <div class="col-md-12 team-quote quote" [innerHTML]="'TEAM.QUOTE' | translate">
     </div>
   </div>
   <div class="row m-t-25">
     <p class="content-desc">
-      Our skilled, creative and highly motivated FAN team members are made up of specialists in system design and integration,
-      electrical and software engineering, GIS and remote sensing, data mining, agriculture and also administration.
+      {{ 'TEAM.DESCRIPTION' | translate }}
     </p>
   </div>
   <!-- begin row -->

@@ -4,26 +4,28 @@
   display: block;
 }
 
-.quote {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 300;
-  color: #757575;
-
-  & small {
-    display: block;
-    font-size: 14px;
-    color: rgba(255,255,255,0.6);
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .quote {
-    font-size: 36px;
+.team-quote {
+  ::ng-deep &.quote {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    color: #757575;
 
     & small {
-      font-size: 16px;
+      display: block;
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      margin-top: 20px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    ::ng-deep &.quote {
+      font-size: 36px;
+
+      & small {
+        font-size: 16px;
+      }
     }
   }
 }
