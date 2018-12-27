@@ -70,5 +70,11 @@
   },
   "WORK": {
     "HEADER": "Who do we work with?"
+  },
+  "MILESTONE": {
+    "HEADER": "Our Milestones"
+  },
+  "CLIENT": {
+    "HEADER": "Our Client Testimonials"
   }
 }
