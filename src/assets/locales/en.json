@@ -43,6 +43,7 @@
     }
   },
   "TEAM": {
+    "HEADER": "Our Team",
     "ROLE": {
       "SE": "Software Engineer",
       "CF": "Co-Founder",
