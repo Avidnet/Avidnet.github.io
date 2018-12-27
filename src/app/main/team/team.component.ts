@@ -43,7 +43,7 @@ export class TeamComponent implements OnInit {
     socials: {
       github: 'https://github.com/mtaha1996'
     }
-  }, {
+  }, /*{
     name: 'Parham Alvani',
     nameFa: 'پرهام الوانی',
     roles: ['CF', 'SE'],
@@ -54,7 +54,7 @@ export class TeamComponent implements OnInit {
     socials: {
       github: 'https://github.com/1995parham',
     }
-  }];
+  }*/];
 
   constructor(
     public translate: TranslateService,
