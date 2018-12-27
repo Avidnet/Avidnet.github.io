@@ -40,6 +40,14 @@
       "HEADER": "Our Philosophy",
       "QOUTE": "<i class='fa fa-quote-left'></i><h3>Our customers do not need to be at their desks,<br /><span>the requirement will come itself!</span></h3><i class='fa fa-quote-right'></i>",
       "MAN": "Avidnet Chairman of the Board"
+    },
+    "STORY": {
+      "HEADER": "Our Story",
+      "P1": "We provide solutions for a variety of verticals such as agriculture, gardening, husbandry, poultry, industrial automation and etc. Our customized innovative solutions set a new standard for quality, reliability, ease of use and reduced total cost.",
+      "P2": "We believe in treating our customers, partners, and suppliers with honesty and integrity in everything we do. Our vision is to play a key role in employing technologies to make life easier and more joyful."
+    },
+    "SKILLS": {
+      "HEADER": "Our Experience"
     }
   },
   "TEAM": {
