@@ -24,8 +24,8 @@
           </div>
           <div class="info text-center">
             <h3 class="name">{{ translate.currentLang === 'fa' && member.nameFa ?  member.nameFa : member.name }}</h3>
-            <div class="title text-theme text-center">{{ 'TEAM.ROLE.' + member.role | translate }}</div>
-            <p>{{member.bio}}</p>
+            <div class="title text-theme text-center" *ngFor="let role of member.roles">{{ 'TEAM.ROLE.' + role | translate }}</div>
+            <p>{{ translate.currentLang === 'fa' && member.bioFa ?  member.bioFa : member.bio }}</p>
             <div class="social text-center">
               <a *ngIf="member.url != ''" href="{{member.url}}"><i class="fas fa-home fa-lg fa-fw"></i></a>
               <a *ngFor="let social of member.socials | keyvalue" href="{{social.value}}"><i class="fab fa-{{social.key}} fa-lg fa-fw"></i></a>

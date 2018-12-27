@@ -4,8 +4,9 @@ import { TranslateService } from '@ngx-translate/core';
 interface Member {
   name: string;
   nameFa?: string;
-  role: string;
+  roles: string[];
   bio: string;
+  bioFa?: string;
   avatar: string;
   url: string;
   socials: { [key: string]: string; };
@@ -23,8 +24,9 @@ export class TeamComponent implements OnInit {
   public members: Member[] = [{
     name: 'Ali Parto',
     nameFa: 'علی پرتو',
-    role: 'CF',
-    bio: 'Our hardware man',
+    roles: ['CF', 'HE'],
+    bio: 'The hardware man',
+    bioFa: 'مرد سخت‌افزار',
     avatar: 'https://github.com/aliparto.png',
     url: '',
     socials: {
@@ -33,8 +35,9 @@ export class TeamComponent implements OnInit {
   }, {
     name: 'Taha Mehrabbeygi',
     nameFa: 'طه مهراب بیگی',
-    role: 'SE',
+    roles: ['SE'],
     bio: 'The man of everything',
+    bioFa: 'مرد همه‌کاره',
     avatar: 'https://github.com/mtaha1996.png',
     url: '',
     socials: {
@@ -43,8 +46,9 @@ export class TeamComponent implements OnInit {
   }, {
     name: 'Parham Alvani',
     nameFa: 'پرهام الوانی',
-    role: 'SE',
-    bio: 'Our software man',
+    roles: ['CF', 'SE'],
+    bio: 'The software man',
+    bioFa: 'مرد نرم‌افزار',
     avatar: 'https://github.com/1995parham.png',
     url: 'https://1995parham.github.io/',
     socials: {
