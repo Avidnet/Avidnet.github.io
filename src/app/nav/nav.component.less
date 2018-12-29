@@ -195,16 +195,13 @@ a:focus {
       padding: 10px 15px;
     }
     &.navbar-small.navbar-transparent .navbar-collapse {
-      background: #000;
-      background: rgba(0,0,0,0.9);
       & .navbar-nav > li > a {
         color: #8F8E8E;
       }
     }
   }
-  .navbar-transparent .navbar-collapse {
-    background: #000;
-    background: rgba(0,0,0,0.9);
+  :not(.navbar-small).navbar-transparent .navbar-collapse {
+    background-color: rgba(0,0,0,0.8);
   }
   .navbar-nav > li.dropdown:hover > .dropdown-menu,
   .navbar-nav > li.dropdown:focus > .dropdown-menu {
