@@ -12,7 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { TeamComponent } from './team/team.component';
-import { QouteComponent } from './qoute/qoute.component';
+import { QuoteComponent } from './quote/quote.component';
 import { SolutionComponent } from './solution/solution.component';
 import { ActionComponent } from './action/action.component';
 import { MilestoneComponent } from './milestone/milestone.component';
@@ -30,7 +30,7 @@ import { FaniotComponent } from './faniot/faniot.component';
     WorkComponent,
     ContactComponent,
     TeamComponent,
-    QouteComponent,
+    QuoteComponent,
     SolutionComponent,
     ActionComponent,
     MilestoneComponent,
