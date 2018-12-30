@@ -34,7 +34,7 @@ export class TeamComponent implements OnInit {
     }
   }, {
     name: 'Taha Mehrabbeygi',
-    nameFa: 'طه مهراب بیگی',
+    nameFa: 'طه محراب بیگی',
     roles: ['SE'],
     bio: 'The man of everything',
     bioFa: 'مرد همه‌کاره',
