@@ -19,6 +19,7 @@ import { MilestoneComponent } from './milestone/milestone.component';
 import { ClientComponent } from './client/client.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { FaniotComponent } from './faniot/faniot.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     MilestoneComponent,
     ClientComponent,
     PricingComponent,
-    GalleryComponent
+    GalleryComponent,
+    FaniotComponent
   ],
   imports: [
     BrowserModule,
