@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-faniot',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaniotComponent implements OnInit {
 
+  public innerWidth: number;
+
   constructor() { }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
   }
 
 }
