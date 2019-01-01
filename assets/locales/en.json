@@ -64,12 +64,12 @@
     "HEADER": "Our Solutions",
     "DESCRIPTION": "Avidnet provides you with smart solutions that improve your productivity.",
     "LETGO": "Let's Go!",
-    "AGRI": "FANIoT Agri",
-    "GARDEN": "FANIoT Garden",
-    "POULTRY": "FANIoT Poultry",
-    "PARKING": "FANIoT Parking",
-    "OBD": "FANIoT OBD",
-    "HUSBANDRY": "FANIoT Husbandry"
+    "AGRI": "FANIoT<br>Agri",
+    "GARDEN": "FANIoT<br>Garden",
+    "POULTRY": "FANIoT<br>Poultry",
+    "PARKING": "FANIoT<br>Parking",
+    "OBD": "FANIoT<br>OBD",
+    "HUSBANDRY": "FANIoT<br>Husbandry"
 
   },
   "PRICING": {
