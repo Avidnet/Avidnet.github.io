@@ -1,3 +1,9 @@
+<!-- begin kbc -->
+<div class="kbc">
+  <img src="assets/img/logo/KBC-en.png" alt="KBC" *ngIf="translate.currentLang !== 'fa'">
+  <img src="assets/img/logo/KBC-fa.png" alt="KBC" *ngIf="translate.currentLang === 'fa'">
+</div>
+<!-- end kbc -->
 <!-- begin content-bg -->
 <ngb-carousel class="home-slideshow" dir="ltr">
   <ng-template ngbSlide>
