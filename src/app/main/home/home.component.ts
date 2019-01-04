@@ -1,5 +1,4 @@
 import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -15,9 +14,8 @@ export class HomeComponent implements OnInit {
     this.elementHeight = event.target.innerHeight;
   }
 
-  constructor(
-    public translate: TranslateService,
-  ) { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
